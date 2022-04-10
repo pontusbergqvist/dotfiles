@@ -2,7 +2,6 @@ if has ("nvim")
 	let g:plug_home = stdpath('data') . '/plugged'
 endif
 
-
 " >> load plugins
 call plug#begin()
 
@@ -12,6 +11,8 @@ if has("nvim")
 	Plug 'neovim/nvim-lspconfig'
 	Plug 'williamboman/nvim-lsp-installer', { 'branch': 'main' }
 	"Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+	Plug 'norcalli/nvim-colorizer.lua'	
+	Plug 'arcticicestudio/nord-vim'
 
 	" >> Syntax helpers
 	Plug 'alvan/vim-closetag'
@@ -41,6 +42,12 @@ if has("nvim")
 	Plug 'hrsh7th/cmp-path'
 	Plug 'hrsh7th/cmp-cmdline'
 	"Plug 'tzachar/cmp-tabnine', { 'do': './install.sh' }
+	
+	" >> Nvim-tree
+	Plug 'kyazdani42/nvim-tree.lua'	
+	Plug 'kyazdani42/nvim-web-devicons'
+
 endif
 
 call plug#end()
+
