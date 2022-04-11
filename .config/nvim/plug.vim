@@ -14,6 +14,9 @@ if has("nvim")
 	Plug 'norcalli/nvim-colorizer.lua'	
 	Plug 'arcticicestudio/nord-vim'
 
+	" >> Statusline
+	Plug 'nvim-lualine/lualine.nvim'
+
 	" >> Syntax helpers
 	Plug 'alvan/vim-closetag'
 	Plug 'jiangmiao/auto-pairs'
