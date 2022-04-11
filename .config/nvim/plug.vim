@@ -10,7 +10,7 @@ if has("nvim")
 	" >> Basic LSP setup and random stuff
 	Plug 'neovim/nvim-lspconfig'
 	Plug 'williamboman/nvim-lsp-installer', { 'branch': 'main' }
-	"Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+	Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 	Plug 'norcalli/nvim-colorizer.lua'	
 	Plug 'arcticicestudio/nord-vim'
 

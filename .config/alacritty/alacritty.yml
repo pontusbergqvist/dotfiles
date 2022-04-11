@@ -46,8 +46,8 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 15 
-    y: 15
+    x: 5 
+    y: 5 
 
   # Spread additional padding evenly around the terminal content.
   #dynamic_padding: false
@@ -445,7 +445,7 @@ cursor:
 #working_directory: None
 
 # Send ESC (\x1b) before characters when alt is pressed.
-#alt_send_esc: true
+alt_send_esc: true
 
 # Offer IPC using `alacritty msg` (unix only)
 #ipc_socket: true
@@ -745,7 +745,11 @@ cursor:
 #
 # If the same trigger is assigned to multiple actions, all of them are executed
 # in the order they were defined in.
-#key_bindings:
+key_bindings:
+  - { key: H, mods: Alt, chars: "\x1bh" }  
+  - { key: J, mods: Alt, chars: "\x1bJ" }  
+  - { key: K, mods: Alt, chars: "\x1bk" }  
+  - { key: L, mods: Alt, chars: "\x1bl" }  
   #- { key: Paste,                                       action: Paste          }
   #- { key: Copy,                                        action: Copy           }
   #- { key: L,         mods: Control,                    action: ClearLogNotice }
