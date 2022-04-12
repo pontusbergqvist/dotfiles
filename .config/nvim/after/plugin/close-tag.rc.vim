@@ -1,38 +1,12 @@
-" >> Settings
-syntax on
-set number
-set relativenumber
-set ignorecase
-set smartcase
-set tabstop=2
-set shiftwidth=2
-set ruler
-set smartindent
-set hlsearch
-set backspace=indent,eol,start " allow backspacing over everything in insert mode
-set autoindent
-set mouse=a
-set completeopt=menuone,noselect,noinsert
-set termguicolors
-
-
-" >> Imports
-runtime ./plug.vim
-runtime ./maps.vim
-
-" Set colorscheme to nord and remove background for transparency
-colorscheme nord
-hi Normal guibg=NONE ctermbg=NONE
-
 " filenames like *.xml, *.html, *.xhtml, ...
 " These are the file extensions where this plugin is enabled.
 "
-let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.js,*.jsx,*.ts,*.tsx'
+let g:closetag_filenames = '*.html,*.xhtml,*.js,*.jsx,*.ts,*.tsx'
 
 " filenames like *.xml, *.xhtml, ...
 " This will make the list of non-closing tags self-closing in the specified files.
 "
-let g:closetag_xhtml_filenames = '*.xhtml,*.jsx,*.js,*.ts,*tsx,*.html'
+let g:closetag_xhtml_filenames = '*.xhtml,*.jsx,*.js,*.ts,*.tsx,*.html'
 
 " filetypes like xml, html, xhtml, ...
 " These are the file types where this plugin is enabled.
@@ -42,7 +16,7 @@ let g:closetag_filetypes = 'html,xhtml,phtml,js,jsx,ts,tsx'
 " filetypes like xml, xhtml, ...
 " This will make the list of non-closing tags self-closing in the specified files.
 "
-let g:closetag_xhtml_filetypes = 'xhtml,jsx,js,html,ts,tsx'
+let g:closetag_xhtml_filetypes = 'xhtml,jsx,js,ts,tsx,html'
 
 " integer value [0|1]
 " This will make the list of non-closing tags case-sensitive (e.g. `<Link>` will be closed while `<link>` won't.)
@@ -55,7 +29,7 @@ let g:closetag_emptyTags_caseSensitive = 1
 let g:closetag_regions = {
     \ 'typescript.tsx': 'jsxRegion,tsxRegion',
     \ 'javascript.jsx': 'jsxRegion',
-    \ 'typescriptreact': 'jsxRegion,tsxRegion',
+   \ 'typescriptreact': 'jsxRegion,tsxRegion',
     \ 'javascriptreact': 'jsxRegion',
     \ }
 
@@ -65,4 +39,4 @@ let g:closetag_shortcut = '>'
 
 " Add > at current position without closing the current tag, default is ''
 "
-let g:closetag_close_shortcut = '<leader>>'
+let g:closetag_close_shortcut = '<leader>>' 

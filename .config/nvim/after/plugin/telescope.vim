@@ -1,7 +1,7 @@
 if !exists('g:loaded_telescope') | finish | endif
 
 " most recently used files
-"nnoremap <Leader>m <cmd>lua require'telescope.builtin'.oldfiles{}<CR>
+" nnoremap <Leader>m <cmd>lua require'telescope.builtin'.oldfiles{}<CR>
 
 " find buffer
 nnoremap <Leader>m <cmd>lua require'telescope.builtin'.buffers{}<CR>
@@ -12,8 +12,8 @@ nnoremap <Leader>f <cmd>lua require'telescope.builtin'.find_files{}<CR>
 " find in current buffer
 nnoremap <Leader>/ <cmd>lua require'telescope.builtin'.current_buffer_fuzzy_find{}<CR>
 
-" bookmarks
-nnoremap <Leader>' <cmd>lua require'telescope.builtin'.marks{}<CR>
+" dotfiles
+nnoremap <Leader>df <cmd>lua require'telescope.builtin'.find_files({ search_dirs = { "~/.config", "~/.tmux.conf" }, hidden = true })<CR>
 
 " git files
 "nnoremap <Leader>f <cmd>lua require'telescope.builtin'.git_files{}<CR>
@@ -38,3 +38,4 @@ telescope.setup{
 		}
 }
 EOF
+
