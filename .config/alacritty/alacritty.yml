@@ -1,6 +1,4 @@
 # Configuration for Alacritty, the GPU enhanced terminal emulator.
-
-# Import additional configuration files
 #
 # Imports are loaded in order, skipping all missing files, with the importing
 # file being loaded last. If a field is already present in a previous import, it
@@ -117,10 +115,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: 'DejaVuSansMono Nerd Font'
-
-    # The `style` can be specified to pick a specific face.
-  style: 'Book'
+    family: 'JetBrainsMono NFM ExtraLight'
 
   # Bold font face
   #bold:
@@ -139,7 +134,7 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: 'Dank Mono'
+    family: 'JetBrainsMono NFM'
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -156,7 +151,7 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 20.0
+  size: 18.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -192,7 +187,7 @@ font:
 colors:
   # Default colors
   primary:
-    background: '#2E3440'
+    background: '#121212'
     foreground: '#ffffff'
 
     # Bright and dim foreground colors
