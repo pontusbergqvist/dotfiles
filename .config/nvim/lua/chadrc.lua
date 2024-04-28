@@ -1,7 +1,3 @@
--- This file  needs to have same structure as nvconfig.lua
--- https://github.com/NvChad/NvChad/blob/v2.5/lua/nvconfig.lua
--- chadrc.lua
-
 --- @type ChadrcConfig
 local M = {}
 
@@ -10,7 +6,8 @@ M.ui = {
     NvDashAscii = { bg = "white", fg = "black" },
     NvDashButtons = { bg = "", fg = "white" },
   },
-  -- nice themes = {
+  -- {
+  -- Some nice themes
   -- monochrome
   -- }
   theme = "monochrome",
@@ -38,8 +35,8 @@ M.ui = {
     buttons = {
       { "📁 File search", "<leader> f" },
       { "🔎 Fuzzy search", "<leader> /" },
-      { "💾 Lazygit", "<leader> gg" },
       { "📖 File tree", "<leader> e" },
+      { "💾 Lazygit", "<leader> gg" },
       { "", "" },
       { "github.com/pontusbergqvist", "" },
     },

@@ -6,7 +6,6 @@ local tree = require("nvim-tree.api").tree
 local map = vim.keymap.set
 
 -- General mappings
-map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>", { desc = "Escape to normal mode" })
 map("n", "|", ":vsplit <Enter>", { desc = "Open current file in split pane" })
 
